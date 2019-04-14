@@ -46,9 +46,9 @@ In the second test case, the rectangle needs to include at least two points. The
 
 		二维尺取，把 n 个点按 x 降序排序， 枚举 x 的边界，维护在这个边界中 n/2+1 个点的最小矩形面积。
 
+### 代码
 ```cpp
 #include <bits/stdc++.h>
-
 using namespace std;
 const int maxn = 300;
 const int inf = 0x7fffffff;
@@ -56,11 +56,9 @@ int T, n;
 
 struct node {
     int x, y;
-
     void read() {
         scanf("%d%d", &x, &y);
     }
-
     inline bool operator<(const node &p) {
         return y < p.y;
     }
