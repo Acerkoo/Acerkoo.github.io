@@ -96,17 +96,18 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="题目描述You are supposed to play the rock-paper-scissors game. There are N players including you. This game consists of multiple rounds. While the rounds go, the number of remaining players decreases. In">
+<meta name="keywords" content="dp,状压dp,概率dp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://acerkoo.github.io/2019/04/15/hello-world/index.html">
+<meta property="og:title" content="Janken Master(概率dp&#x2F;状压dp)">
+<meta property="og:url" content="https://acerkoo.github.io/2019/04/17/upc9726/index.html">
 <meta property="og:site_name" content="Acerkoo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="题目描述You are supposed to play the rock-paper-scissors game. There are N players including you. This game consists of multiple rounds. While the rounds go, the number of remaining players decreases. In">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-14T16:06:54.220Z">
+<meta property="og:updated_time" content="2019-04-16T16:25:20.729Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Janken Master(概率dp&#x2F;状压dp)">
+<meta name="twitter:description" content="题目描述You are supposed to play the rock-paper-scissors game. There are N players including you. This game consists of multiple rounds. While the rounds go, the number of remaining players decreases. In">
 
 
 
@@ -114,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="https://acerkoo.github.io/2019/04/15/hello-world/">
+  <link rel="canonical" href="https://acerkoo.github.io/2019/04/17/upc9726/">
 
 
 
@@ -124,7 +125,7 @@
   };
 </script>
 
-  <title>Hello World | Acerkoo</title>
+  <title>Janken Master(概率dp/状压dp) | Acerkoo</title>
   
 
 
@@ -383,7 +384,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://acerkoo.github.io/2019/04/15/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://acerkoo.github.io/2019/04/17/upc9726/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Acerkoo">
@@ -400,7 +401,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">Janken Master(概率dp/状压dp)
 
               
             
@@ -426,12 +427,30 @@
                 
               
 
-              <time title="创建时间：2019-04-14 16:06:54" itemprop="dateCreated datePublished" datetime="2019-04-14T16:06:54Z">2019-04-14</time>
+              <time title="创建时间：2019-04-16 16:25:20" itemprop="dateCreated datePublished" datetime="2019-04-16T16:25:20Z">2019-04-16</time>
             
 
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/dp/" itemprop="url" rel="index"><span itemprop="name">dp</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -461,16 +480,22 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>You are supposed to play the rock-paper-scissors game. There are N players including you.</p>
+<p>This game consists of multiple rounds. While the rounds go, the number of remaining players decreases. In each round, each remaining player will select an arbitrary shape independently. People who show rocks win if all of the other people show scissors. In this same maNer, papers win rocks, scissors win papers. There is no draw situation due to the special rule of this game: if a round is tied based on the normal rock-paper-scissors game rule, the player who has the highest programming contest rating (this is nothing to do with the round!) will be the only wiNer of the round. Thus, some players win and the other players lose on each round. The losers drop out of the game and the wiNers proceed to a new round. They repeat it until only one player becomes the wiNer.</p>
+<p>Each player is numbered from 1 to N. Your number is 1. You know which shape the other N−1 players tend to show, that is to say, you know the probabilities each player shows rock, paper and scissors. The i-th player shows rock with ri% probability, paper with pi% probability, and scissors with si% probability. The rating of programming contest of the player numbered i is ai. There are no two players whose ratings are the same. Your task is to calculate your probability to win the game when you take an optimal strategy based on each player’s tendency and rating.</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>The input consists of a single test case formatted as follows.</p>
+<p>N<br>a1<br>a2 r2 p2 s2<br>…<br>aN rN pN sN</p>
+<p>The first line consists of a single integer N (2≤N≤14). The second line consists of a single integer ai (1≤ai≤N). The (i+1)-th line consists of four integers ai,ri,pi and si(1≤ai≤N,0≤ri,pi,si≤100, ri+pi+si=100) for i=2,…,N. It is guaranteed that a1,…,aN are pairwise distinct.</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>Print the probability to win the game in one line. Your answer will be accepted if its absolute or relative error does not exceed 10−6.</p>
+<h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><blockquote>
+<p>2<br>2<br>1 40 40 20</p>
+</blockquote>
+<h3 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h3><blockquote>
+<p>0.8</p>
+</blockquote>
+<h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h3><p>你要与 n-1 个人进行剪刀石头布的游戏。<br>已知 n-1 个人的出剪刀石头布的概率，与rating (胜负规则同石头剪刀布游戏， 当达成平局时，rating高的人为唯一获胜者)<br>对于每一轮游戏， 只有获胜的人能够晋级下一轮，当所有人都作出相同选择时，进入平局。 当场上只剩一个人时为获胜者，游戏结束。<br>求自己的为获胜者的最大概率。</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>数据范围 n&lt;=14, 显然可以用状压dp。<br>对于当前状态 mask， mask的二进制上为 1 时表示参与到游戏中的人。 对于每个mask， 可以通过枚举哪些人与自己出的一样， 哪些人与自己出的不一样， 同时维护一下平局时的获胜的概率。dp[mask] 则为自己出石头剪刀布三者获胜的最大概率。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">15</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxm = (<span class="number">1</span> &lt;&lt; <span class="number">15</span>);</span><br><span class="line"><span class="keyword">double</span> dp[maxm];</span><br><span class="line"><span class="keyword">int</span> n, f[maxn], x;</span><br><span class="line"><span class="keyword">double</span> r[maxn], p[maxn], s[maxn];</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;x);</span><br><span class="line">    --n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">        <span class="keyword">int</span> a, b, c, d;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>, &amp;a, &amp;b, &amp;c, &amp;d);</span><br><span class="line">        f[i] = a / x;</span><br><span class="line">        r[i] = b / <span class="number">100.0</span>;</span><br><span class="line">        p[i] = c / <span class="number">100.0</span>;</span><br><span class="line">        s[i] = d / <span class="number">100.0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    dp[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> mask = <span class="number">1</span>; mask &lt; (<span class="number">1</span> &lt;&lt; n); ++mask) &#123;</span><br><span class="line">        <span class="keyword">double</span> rock = <span class="number">0</span>, paper = <span class="number">0</span>, scissor = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">double</span> rt = <span class="number">1</span>, pt = <span class="number">1</span>, st = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">            <span class="keyword">if</span>(k==mask) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">double</span> r1 = <span class="number">1</span>, p1 = <span class="number">1</span>, s1 = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">double</span> r2 = <span class="number">1</span>, p2 = <span class="number">1</span>, s2 = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">                <span class="keyword">if</span> (k &amp; (<span class="number">1</span> &lt;&lt; i)) &#123;</span><br><span class="line">                    r1 *= r[i];</span><br><span class="line">                    p1 *= p[i];</span><br><span class="line">                    s1 *= s[i];</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (mask &amp; (<span class="number">1</span> &lt;&lt; i)) &#123;</span><br><span class="line">                    r2 *= r[i];</span><br><span class="line">                    p2 *= p[i];</span><br><span class="line">                    s2 *= s[i];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            rock += r1 * s2 * dp[k];</span><br><span class="line">            rt -= r1 * (p2 + s2);</span><br><span class="line">            paper += p1 * r2 * dp[k];</span><br><span class="line">            pt -= p1 * (r2 + s2);</span><br><span class="line">            scissor += s1 * p2 * dp[k];</span><br><span class="line">            st -= s1 * (r2 + p2);</span><br><span class="line">        &#125; <span class="keyword">while</span>(k = (k-mask)&amp;mask);</span><br><span class="line">        <span class="keyword">bool</span> fg = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> ((mask &amp; (<span class="number">1</span> &lt;&lt; i)) &amp;&amp; f[i]) &#123;</span><br><span class="line">                fg = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (!fg) &#123;</span><br><span class="line">            rock += rt, paper += pt, scissor += st;</span><br><span class="line">        &#125;</span><br><span class="line">        dp[mask] = max(rock, max(paper, scissor));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%.6f\n"</span>, dp[(<span class="number">1</span> &lt;&lt; n) - <span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -491,6 +516,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/dp/" rel="tag"># dp</a>
+          
+            <a href="/tags/状压dp/" rel="tag"># 状压dp</a>
+          
+            <a href="/tags/概率dp/" rel="tag"># 概率dp</a>
+          
+        </div>
+      
 
       
       
@@ -500,14 +535,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/04/15/Jurisdiction-Disenchantment-二维尺取/" rel="next" title="Jurisdiction Disenchantment(二维尺取)">
+                <i class="fa fa-chevron-left"></i> Jurisdiction Disenchantment(二维尺取)
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/15/Jurisdiction-Disenchantment-二维尺取/" rel="prev" title="Jurisdiction Disenchantment(二维尺取)">
-                Jurisdiction Disenchantment(二维尺取) <i class="fa fa-chevron-right"></i>
+              <a href="/2019/04/17/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -669,7 +708,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入"><span class="nav-number">2.</span> <span class="nav-text">输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出"><span class="nav-number">3.</span> <span class="nav-text">输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入"><span class="nav-number">4.</span> <span class="nav-text">样例输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出"><span class="nav-number">5.</span> <span class="nav-text">样例输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题意"><span class="nav-number">6.</span> <span class="nav-text">题意</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路"><span class="nav-number">7.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">8.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>

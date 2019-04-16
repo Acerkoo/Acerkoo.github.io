@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="题目描述The Brocard Erdös-Straus conjecture is that for any integer n &amp;gt; 2, there are positive integers a ≤ b ≤ c, so that:   (1)  4/n = 1/a + 1/b + 1/cThere may be multiple solutions.  For example:4/18">
+  <meta name="description" content="题目描述The Brocard Erdös-Straus conjecture is that for any integer n &amp;gt; 2, there are positive integers a ≤ b ≤ c, so that:   (1)  4/n = 1/a + 1/b + 1/c   There may be multiple solutions.  For example:">
 <meta name="keywords" content="数学,思维">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Erdös-Straus Conjecture（数学思维）">
 <meta property="og:url" content="https://acerkoo.github.io/2019/04/17/upc10282/index.html">
 <meta property="og:site_name" content="Acerkoo">
-<meta property="og:description" content="题目描述The Brocard Erdös-Straus conjecture is that for any integer n &amp;gt; 2, there are positive integers a ≤ b ≤ c, so that:   (1)  4/n = 1/a + 1/b + 1/cThere may be multiple solutions.  For example:4/18">
+<meta property="og:description" content="题目描述The Brocard Erdös-Straus conjecture is that for any integer n &amp;gt; 2, there are positive integers a ≤ b ≤ c, so that:   (1)  4/n = 1/a + 1/b + 1/c   There may be multiple solutions.  For example:">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-16T16:16:27.556Z">
+<meta property="og:updated_time" content="2019-04-16T16:31:46.512Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Erdös-Straus Conjecture（数学思维）">
-<meta name="twitter:description" content="题目描述The Brocard Erdös-Straus conjecture is that for any integer n &amp;gt; 2, there are positive integers a ≤ b ≤ c, so that:   (1)  4/n = 1/a + 1/b + 1/cThere may be multiple solutions.  For example:4/18">
+<meta name="twitter:description" content="题目描述The Brocard Erdös-Straus conjecture is that for any integer n &amp;gt; 2, there are positive integers a ≤ b ≤ c, so that:   (1)  4/n = 1/a + 1/b + 1/c   There may be multiple solutions.  For example:">
 
 
 
@@ -427,7 +427,7 @@
                 
               
 
-              <time title="创建时间：2019-04-16 16:16:27" itemprop="dateCreated datePublished" datetime="2019-04-16T16:16:27Z">2019-04-16</time>
+              <time title="创建时间：2019-04-16 16:31:46" itemprop="dateCreated datePublished" datetime="2019-04-16T16:31:46Z">2019-04-16</time>
             
 
             
@@ -482,8 +482,13 @@
       
         <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>The Brocard Erdös-Straus conjecture is that for any integer n &gt; 2, there are positive integers a ≤ b ≤ c, so that: </p>
 <blockquote>
-<p>(1)  4/n = 1/a + 1/b + 1/c<br>There may be multiple solutions.  For example:<br>4/18 = 1/9 + 1/10 + 1/90 = 1/5 + 1/90 + 1/90 = 1/5 + 1/46 + 1/2470<br>Since it is still a conjecture, there are obviously no counterexamples for n ≤ 50,000.  For this problem, you will write a program which takes as input an integer n between 2 and 50000 inclusive and returns the smallest triple of integers a, b, c in lexicographic order which satisfies equation (1) above.  That is, if a1, b1, c1 is any other solution to (1) for the given input, then either (a &lt; a1) or (a = a1 and b ≤ b1). </p>
+<p>(1)  4/n = 1/a + 1/b + 1/c </p>
 </blockquote>
+<p>There may be multiple solutions.  For example: </p>
+<blockquote>
+<p>4/18 = 1/9 + 1/10 + 1/90 = 1/5 + 1/90 + 1/90 = 1/5 + 1/46 + 1/2470 </p>
+</blockquote>
+<p>Since it is still a conjecture, there are obviously no counterexamples for n ≤ 50,000.  For this problem, you will write a program which takes as input an integer n between 2 and 50000 inclusive and returns the smallest triple of integers a, b, c in lexicographic order which satisfies equation (1) above.  That is, if a1, b1, c1 is any other solution to (1) for the given input, then either (a &lt; a1) or (a = a1 and b ≤ b1). </p>
 <h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>The first line of input contains a single decimal integer P, (1≤P≤1000), which is the number of data sets that follow.  Each data set should be processed identically and independently. </p>
 <p>Each data set consists of a single line of input.  It contains the data set number, K, followed by a single space, followed by the decimal integer n, (2≤n≤50000). </p>
 <h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>For each data set there is one line of output.  The single output line consists of the data set number, K, followed by a single space followed by the decimal integer values a, b and c in that order, separated by single spaces. </p>
@@ -494,13 +499,12 @@
 <p>1 4 18 468<br>2 133 23460 71764140<br>3 12463 207089366 11696183113896622<br>4 12463 310640276 96497380762715900<br>5 5 46 2070</p>
 </blockquote>
 <h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h3><p>给出 n（n&lt;=50000), 求满足 4/n = 1/a + 1/b + 1/c  的 a, b, c， 若存在多个， 则输出 abc 字典序最小的那组。</p>
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>A(4/n = 1/a + 1/b + 1/c) –&gt; B(4<em>a = (1 + a/b + a/c) </em> n)<br>B –&gt; C(4 <em> a - n = (a/b + a/c) </em> n)<br>C –&gt; D((4 <em> a - n)/ (a </em> n) = 1/b + 1/c =&gt; y/x = 1/b + 1/c)<br>D –&gt; E( (y <em> b - b)/(x </em> b) = 1/c)</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><blockquote>
+<p>   4/n = 1/a + 1/b + 1/c<br>=&gt; 4<em>a = (1 + a/b + a/c) </em> n<br>=&gt; 4 <em> a - n = (a/b + a/c) </em> n<br>=&gt; (4 <em> a - n)/ (a </em> n) = 1/b + 1/c<br>=&gt; y/x = 1/b + 1/c<br>=&gt; (y <em> b - b)/(x </em> b) = 1/c</p>
+</blockquote>
 <p>通过公式推导可得：<br>    a &gt; n/4<br>    b &gt; x/y<br>    当 (y <em> b  - b)|(x </em> b) 时， c = (x <em> b)/(y </em> b - b)</p>
 <p>那么就可以通过枚举a， b 进行求解。</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>‵<code></code>cpp</p>
-<p>#include &lt;bits/stdc++.h&gt;<br>typedef long long ll;<br>using namespace std;<br>int _, k;</p>
-<p>int main() {<br>    for (scanf(“%d”, &amp;_); _; _–) {<br>        ll n;<br>        scanf(“%lld”, &amp;n);<br>        ll a, b, c;<br>        bool fg = false;<br>        for (a = n / 4 + 1; a &lt;= n / 2; ++a) {<br>            ll x = a <em> n, y = 1ll </em> 4 <em> a - n;<br>            ll gcd = __gcd(x, y);<br>            y /= gcd, x /= gcd;<br>            for (b = x / y + 1; b &lt;= 2 </em> x / y; ++b) {<br>                if ((x <em> n) % (y </em> b - x) == 0) {<br>                    c = (x <em> b) / (y </em> b - x);<br>                    fg = 1;<br>                    break;<br>                }<br>            }<br>            if (fg) break;<br>        }<br>        printf(“%d %lld %lld %lld\n”, n, a, b, c);<br>    }<br>    return 0;<br>}<br><code>`</code></p>
-
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> _, k;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;_); _; _--) &#123;</span><br><span class="line">        ll n;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, &amp;n);</span><br><span class="line">        ll a, b, c;</span><br><span class="line">        <span class="keyword">bool</span> fg = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">for</span> (a = n / <span class="number">4</span> + <span class="number">1</span>; a &lt;= n / <span class="number">2</span>; ++a) &#123;</span><br><span class="line">            ll x = a * n, y = <span class="number">1l</span>l * <span class="number">4</span> * a - n;</span><br><span class="line">            ll gcd = __gcd(x, y);</span><br><span class="line">            y /= gcd, x /= gcd;</span><br><span class="line">            <span class="keyword">for</span> (b = x / y + <span class="number">1</span>; b &lt;= <span class="number">2</span> * x / y; ++b) &#123;</span><br><span class="line">                <span class="keyword">if</span> ((x * n) % (y * b - x) == <span class="number">0</span>) &#123;</span><br><span class="line">                    c = (x * b) / (y * b - x);</span><br><span class="line">                    fg = <span class="number">1</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (fg) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d %lld %lld %lld\n"</span>, n, a, b, c);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -538,8 +542,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/16/upc9726/" rel="next" title="Janken Master(概率dp/状压dp)">
-                <i class="fa fa-chevron-left"></i> Janken Master(概率dp/状压dp)
+              <a href="/2019/04/17/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
