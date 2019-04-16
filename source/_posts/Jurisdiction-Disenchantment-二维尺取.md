@@ -40,11 +40,11 @@ In the second test case, the rectangle needs to include at least two points. The
 
 ### 题意
 
-		有 n 个点，需要用一个矩形框 n/2+1 个点，求矩形最小面积。
+有 n 个点，需要用一个矩形框 n/2+1 个点，求矩形最小面积。
 
 ### 思路
 
-		二维尺取，把 n 个点按 x 降序排序， 枚举 x 的边界，维护在这个边界中 n/2+1 个点的最小矩形面积。
+二维尺取，把 n 个点按 x 降序排序， 枚举 x 的边界，维护在这个边界中 n/2+1 个点的最小矩形面积。
 
 ### 代码
 ```cpp
