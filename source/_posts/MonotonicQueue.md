@@ -288,6 +288,7 @@ int main() {
 ## T5
 
 ### 题意
+
    [股票交易](https://www.luogu.org/problemnew/show/P2569)
 
    对于某只股票，已知它未来T天的走势，即 买入价ap, 卖出价bp， 买入数量上限as, 卖出数量上限bs。
